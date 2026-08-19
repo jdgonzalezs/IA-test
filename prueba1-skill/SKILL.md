@@ -12,8 +12,24 @@ Follow these instructions when this skill is used.
 - The user mentions `prueba1-skill`
 - You need a sample project skill to demonstrate SKILL.md layout
 
+## Layout
+
+Keep extra material out of this file. Load it from these default directories relative to the skill root (`prueba1-skill/`):
+
+| Directory | Purpose |
+| --- | --- |
+| `scripts/` | Executable helpers the agent can run |
+| `references/` | Extra docs loaded on demand |
+| `assets/` | Templates and other static files |
+
+- Scripts: `scripts/example.sh`
+- References: `references/REFERENCE.md`
+- Assets: `assets/config-template.json`
+
 ## Instructions
 
 1. Read this file from `prueba1-skill/SKILL.md`
 2. Keep the skill `name` matching the parent folder
-3. Put extra scripts in `scripts/` and long docs in `references/` if they are added later
+3. For extra steps or examples, read `references/REFERENCE.md`
+4. For a starting config, copy `assets/config-template.json`
+5. For a runnable helper, use `scripts/example.sh`
